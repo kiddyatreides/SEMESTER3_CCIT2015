@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="addressbook" type="cstdata"/>
+     <xs:complexType name="cstdata">
+        <xs:sequence>
+            <xs:element name="email" type="csdt"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="csdt">
+        <xs:sequence>
+            <xs:element name="fullname" type="xs:string"/>
+            <xs:element name="nickname" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="mailtype" type="tipee" use="required"/>
+        <xs:attribute name="from" type="xs:string" use="required"/>
+        <xs:attribute name="subject" type="xs:string" use="required"/>
+        <xs:attribute name="date" type="xs:date" use="required"/>
+        <xs:attribute name="size" type="xs:byte" use="required"/>
+        <xs:attribute name="priority" type="kualitas" use="required"/>
+    </xs:complexType>
+    <xs:simpleType name="tipee">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="mail|news"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="kualitas">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="high|medium|low"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

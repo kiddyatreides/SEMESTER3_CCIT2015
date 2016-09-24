@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hapus product</title>
+	<script language="JavaScript">
+		function CariData()
+		{
+			var xmldoc= new ActiveXObject("Msxml2.DOMDocument");      
+			xmldoc.load("Product-DOM.xml");   
+			var error=xmldoc.parseError;
+
+			if(error!="") 
+			{    
+				document.write("Error, alasan : "+error.reason);    
+				return false;
+			}
+			else
+			{
+				var prodid = form1.prid.value;    
+				var objPRODID=xmldoc.getElementsByTagName("PRODID");    
+				var objPRODNAME=xmldoc.getElementsByTagName("PRODNAME");    
+				var objPRICE=xmldoc.getElementsByTagName("PRICE");
+
+				 for(ctr=0; ctr<objPRODID.length;ctr++) 
+				 {
+				 	if (objPRODID[ctr].text==prodid)
+				 	{
+				 		form1.prname.value = objPRODNAME[ctr].text;     
+				 		form1.price.value = objPRICE[ctr].text;     
+				 		break;
+				 	}
+				 	else
+				 	{
+				 		document.write("Error");
+				 		return false;
+				 	}
+				 }
+			}  
+		}
+		function HapusData()
+		{
+			var xmldoc = new ActiveXObject("Msxml2.DOMDocument");      
+			xmldoc.load("Product-DOM.xml");   
+			var error=xmldoc.parseError;
+
+			if(error!="") 
+			{    
+				document.write("Error, alasan : "+error.reason);    
+				return false;
+			}
+			else
+			{
+				var prodid = form1.prid.value;    
+				var objRoot=xmldoc.getElementsByTagName("PRODUCTDETAILS")[0];    
+				var objPRODUCT=xmldoc.getElementsByTagName("PRODUCT");    
+				var objPRODID=xmldoc.getElementsByTagName("PRODID");
+
+				for(ctr=0; ctr<objPRODID.length;ctr++) 
+				{
+				 	if (objPRODID[ctr].text==prodid)
+				 	{
+				 		objRoot.removeChild(objRoot.childNodes.item(ctr)); 
+				 		break;
+				 	}
+				}
+				alert(xmldoc.xml);       
+
+				//MENYIMPAN KE FILE   
+				var OutputXML = xmldoc.xml;  
+				var mfObject, NewSampleFile;   
+				mfObject = new ActiveXObject("Scripting.FileSystemObject");   
+				NewSampleFile = mfObject.CreateTextFile("D:/CCIT FTUI/Tugas/PRODUCT-DOM.xml", true);   
+				NewSampleFile.write(OutputXML);   
+				NewSampleFile.close(); 
+			}   
+		}
+	</script>
+</head>
+<body><FORM name="form1">  
+	<table> 
+	<tr>  
+		<td> Kode Produk : </td>  
+		<td> <input type=text name="prid"> </td>  
+		<td> <input type=button value="Cari!" onClick="javascript:CariData()"></td> 
+	</tr> 
+	<tr>   
+		<td> Nama Produk : </td>   
+		<td> <input type=text name="prname"><br></td>  
+	</tr> 
+	<tr>   
+		<td> Harga : </td>   
+		<td><input type=text name="price"><br></td> 
+	</tr> 
+	<tr>  
+		<td><input type=button value="Hapus" onClick="javascript:HapusData()"> </td> 
+	</tr>
+	</table></FORM>
+</body>
+</html>

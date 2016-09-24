@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="RESERVATION" type="res"/>
+    <xs:complexType name="res">
+        <xs:sequence>
+            <xs:element name="FROM" type="fromdef"/>
+            <xs:element name="TO" type="xs:string"/>
+            <xs:element name="FARE" type="xs:positiveInteger"/>
+            <xs:element name="DATE" type="xs:date"/>
+            <xs:element name="CLASS" type="classdeff"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="fromdef">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(NY{1}|Chicago{1}|Miami{1}|Pitssburgh{1})">
+            </xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="classdeff">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(First{1}|Executive{1}|Economy{1})">
+            </xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

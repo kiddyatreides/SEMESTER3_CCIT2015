@@ -1,0 +1,84 @@
+<HTML>
+    <HEAD>
+        <TITLE> Tambah Product </TITLE>
+        <SCRIPT language="javascript">
+            function insertXMLData(){
+				var xmldoc = new ActiveXObject("Msxml2.DOMDocument");
+				xmldoc.load("Product-DOM.xml");
+				var error = xmldoc.parseError;
+				if(xmldoc.readyState == 4 AND xmldoc.parseError.errorCode == 0){
+				var newelPRODUCT;
+				var newelPRODID;
+				var newelPRICE;
+				var prodid = form1.prid.value;
+				var proname = form.prname.value;
+				var proprice = form1.price.value;
+				
+				var y = xmldoc.getElementsByTagName("PRODUCTDETAILS")[0];
+				newelPRODUCT = xmldoc.createElement("PRODUCT");
+				y.appendChild(newelPRODUCT);
+				
+				objelementsPRODUCT = xmldoc.getElementsByTagName("PRODUCT")
+				last = objelementsPRODUCT.length;
+				y = objelementsPRODUCT[last - 1];
+				
+				newelPRODID = xmldoc.createElement("PRODID");
+				y.appendChild(newelPRODID);
+				y.lastChild.text = prodid;
+				
+				newelPRODNAME = xmldoc.createElement("PRODNAME");
+				y.appendChild(newelPRODNAME);
+				y.lastChild.text = proname;
+				
+				newelPRODNAME = xmldoc.createElement("PRICE");
+				y.appendChild(newelPRICE);
+				y.lastChild.text = proprice;
+				
+				alert(xmldoc.xml);
+				
+				//MENYIMPAN KE FILE
+				var OutputXML = xmldoc.xml;
+				var mfObject, NewSampleFile;
+				mfObject = new ActiveXObject("Scripting.FileSystemObject")
+				NewSampleFile = mfObject.CreateTextFile("E:/DFile/Kampus/CCIT/Semester3/LatihanJavascript/Product-DOM.xml", true);
+				
+				NewSampleFile.write(OutputXML);
+				NewSampleFile.close();
+				}
+				
+				else{
+				alert("Failed to load Document");
+				}
+				
+            
+            }
+        </SCRIPT>
+    </HEAD>
+    
+    <BODY>
+        <FORM name="form1">
+            <table>
+                <tr>
+                    <td> Kode Produk : </td>
+                    <td> <input type="text" name="prid"><br></br></input></td>
+                </tr>
+                <tr>
+                    <td> Nama Produk : </td>
+                    <td> <input type="text" name="prname"><br></br></input></td>
+                </tr>
+                <tr>
+                    <td> Harga : </td>
+                    <td> <input type="text" name="price"><br></br></input></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="Tambah" onClick="javascript:insertXMLData()"><br></br></input></td>
+                </tr>
+            </table>
+        </FORM>
+    </BODY>
+    
+    
+    
+    
+    
+</HTML>

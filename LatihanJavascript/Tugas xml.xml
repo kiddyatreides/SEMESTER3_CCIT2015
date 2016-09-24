@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addressbook>
+	<email mailtype="mail" from="budi" subject="doorprize" date="13-11-2016" size="30" priority="high">
+		<fullname>gilang</fullname>
+		<nickname>ramadhan</nickname>
+	</email>	
+</addressbook>

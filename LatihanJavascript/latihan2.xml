@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRODUCTDATA xmlns:xsl="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <PRODUCT>
+        <PRODNAME>TEST</PRODNAME>
+        <DESC>TESTING</DESC>
+        <PRICE>10000</PRICE>
+        <QTY>2</QTY>
+    </PRODUCT>
+    
+</PRODUCTDATA>

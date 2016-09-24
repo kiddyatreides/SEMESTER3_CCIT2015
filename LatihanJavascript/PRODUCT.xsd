@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="PRODUCTDATA" type="prdata"/>
+	<xs:complexType name="prdata">
+		<xs:sequence>
+			<xs:element name="PRODUCT" type="detail"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="detail">
+		<xs:sequence>
+			<xs:element name="PRODNAME" type="xs:string"/>
+			<xs:element name="DESC" type="xs:string"/>
+			<xs:element name="PRICE" type="xs:positiveInteger"/>
+			<xs:element name="QTY" type="xs:nonNegativeInteger"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="required"></xs:attribute>
+		<xs:attribute name="CATEGORY" type="xs:string" use="required"></xs:attribute>
+	</xs:complexType>
+</xs:schema>

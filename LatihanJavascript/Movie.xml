@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MOVIEDETAILS xmlns:xsl="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <MOVIE>
+        <TITLE>The Sixth Sense</TITLE>
+        <MOVIEID>M876</MOVIEID>
+        <DIRNAME>M Night Shyamalan</DIRNAME>
+        <CAST>Bruce Willis, Halel Joey Osment</CAST>
+        <YEAROFRELEASE>1987</YEAROFRELEASE>
+    </MOVIE>
+</MOVIEDETAILS>

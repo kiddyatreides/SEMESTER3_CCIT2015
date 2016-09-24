@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl" ?>
+    <BOOKS>
+        <BOOK BOOKID="0010">
+            <TITLE> LEARN XML </TITLE>
+            <RATE> 15 </RATE>
+            <AUTHOR>
+                <FIRSTNAME> SALLY </FIRSTNAME>
+                <LASTNAME> SMITH </LASTNAME>
+            </AUTHOR>
+        </BOOK>
+        <BOOK BOOKID="0011">
+            <TITLE> IF TOMORROW COMES </TITLE>
+            <RATE> 10 </RATE>
+            <AUTHOR>
+                <FIRSTNAME> SYDNEY </FIRSTNAME>
+                <LASTNAME> SHELDON </LASTNAME>
+            </AUTHOR>
+        </BOOK>
+    </BOOKS>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--<?xml-stylesheet type="text/css" href="css/latihan.css" ?>-->
+<?xml-stylesheet type="text/xsl" href="product.xsl" ?>
+<PRODUCTNAME>
+    <PRODUCT PRODID="P001" CATEGORY="TOY">
+        <PRODUCTNAME> Mini Bus</PRODUCTNAME>
+        <DESCRIPTION> This is a toy for chlidren aged 4 and above </DESCRIPTION>
+        <PRICE> 120000 </PRICE>
+        <QUANTITY> 25</QUANTITY>
+    </PRODUCT>
+    <PRODUCT PRODID="P002" CATEGORY="book">
+        <PRODUCTNAME> Mini BOOK</PRODUCTNAME>
+        <DESCRIPTION> This is a toy for chlidren aged 4 and above </DESCRIPTION>
+        <PRICE> 1200000 </PRICE>
+        <QUANTITY> 25</QUANTITY>
+    </PRODUCT>
+</PRODUCTNAME>

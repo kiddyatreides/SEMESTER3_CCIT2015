@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="CyberShoppe" type="customerdata"/>
+    <xs:complexType name="customerdata">
+        <xs:sequence>
+            <xs:element name="email" type="customerdata"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="customerdata2">
+        <xs:sequence>
+            <xs:element name="fullname" type="xs:string"/>
+            <xs:element name="nickname" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="mailtype" type="mailtype" use="required"/>
+        <xs:attribute name="from" type="xs:string" use="required"/>
+        <xs:attribute name="subject" type="xs:string" use="required"/>
+        <xs:attribute name="dateofreceipt" type="xs:date" use="required"/>
+        <xs:attribute name="size" type="xs:byte" use="required"/>
+        <xs:attribute name="priority" type="priority" use="required"/>
+    </xs:complexType>
+    <xs:simpleType name="mailtype">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="mail|news"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="priority">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="low|high|medium"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

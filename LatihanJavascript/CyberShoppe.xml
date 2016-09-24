@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CyberShoppe
+	xmlns:xsl="http://www.w3.org/2001/XMLSchema-instance"
+	xsl:noNamespaceSchemaLocation="file:C:\Users\KIDDY\Desktop\MHudyaRamadhana-3SC1\CyberShoppe.xsd">
+	<email mailtype="mail" from="bambang" subject="MU Win the Game" dateofreceipt="12" size="38" priority="low">
+		<fullname>Bambang Pamungkas</fullname>
+		<nickname>Pamungkas</nickname>
+	</email>	
+	<email mailtype="mail" from="rahadio" subject="Hello There" dateofreceipt="2016-12-21" size="32" priority="medium">
+		<fullname>Rahadio Adiputro</fullname>
+		<nickname>Dio</nickname>
+	</email>	
+	<email mailtype="news" from="dudy" subject="Bought some IOT Things" dateofreceipt="2016-12-20" size="31" priority="low">
+		<fullname>Dudy Fathan Ali</fullname>
+		<nickname>Dudy</nickname>
+	</email>	
+	<email mailtype="mail" from="ugi" subject="Please Accept my Offer" dateofreceipt="2016-09-12" size="8700" priority="high">
+		<fullname>Ugi Ispoyo Widodo</fullname>
+		<nickname>Ugi</nickname>
+	</email>	
+	<email mailtype="news" from="hudya" subject="Hackathon BRI Digital Challenge" dateofreceipt="2016-12-12" size="380" priority="high">
+		<fullname>Muhamad Hudya Ramadhana</fullname>
+		<nickname>Hudya</nickname>
+	</email>	
+</CyberShoppe>
