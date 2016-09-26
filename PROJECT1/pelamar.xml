@@ -1,0 +1,23 @@
+<pelamar>
+	<datapelamar>
+		<id_pelamar>1</id_pelamar>
+		<nama>M Hudya Ramadhana</nama>
+		<email>kiddydhana@gmail.com</email>
+		<address>Jakarta</address>
+		<jobdesk>Programmer</jobdesk>
+	</datapelamar>
+	<datapelamar>
+		<id_pelamar>2</id_pelamar>
+		<nama>Mutia Ayu Dianita</nama>
+		<email>mutiaayudianita@gmail.com</email>
+		<address>Bogor</address>
+		<jobdesk>IT Manager</jobdesk>
+	</datapelamar>
+	<datapelamar>
+		<id_pelamar>3</id_pelamar>
+		<nama>Ugi Ispoyo Widodo</nama>
+		<email>ugiispoyowidodo@gmail.com</email>
+		<address>Bogor</address>
+		<jobdesk>Programmer</jobdesk>
+	</datapelamar>
+</pelamar>

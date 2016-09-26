@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 <head>
   <title>Rekrutmen Pegawai</title>
   <meta charset="utf-8">
@@ -27,7 +27,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Vacancy</a></li>
         <li class="dropdown">
@@ -111,9 +111,9 @@
 
 <div class="container">
 	<div class="jumbotron">
-	  <h1>Hello, world!</h1>
-	  <p>...</p>
-	  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+	  <center><h1>Welcome to Jobfield Recruitment</h1></center>
+	  <center><p>You can apply the job below. Make sure you are suitable for the job recruitment, choose the best jobdesk which suit for you to work at the company.</p></center>
+	  <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>-->
 	</div>
 </div>
 
@@ -121,47 +121,31 @@
   <center> <h1>Berita Lowongan</h1></center>
   <div class="row">
   <!--Berita-->
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
+  <?php
+// untuk meload data xml (buku.xml) dengan cara SimpleXML 
+$news = new SimpleXMLElement('berita.xml', null, true);
+ 
+// menampilkan data ke XML ke dalam tabel HTML
+ // melakukan looping penampilan data buku
+foreach($news as $berita)
+{
+  echo "
+  <div class='col-sm-6 col-md-4'>
+    <div class='thumbnail'>
       <br>
-      <img src="images/briefcase.png" width="150px"; height="150px";>
-      <div class="caption">
-        <center><h3>Lowongan Pekerjaan BNI Tahap 2</h3></center>
+      <img src='images/briefcase.png' width='150px'; height='150px';>
+      <div class='caption'>
+        <center><h3>{$berita->judul}</h3></center>
         <br>
-        <center><p>Bank Nasional Indonesia akhirnya membuka lowongan pekerjaan, ada beberapa kategori yang dib[....]<br><br> <a href="vacancy.html">Lihat Selengkapnya Disini</a></p></center>
+        <center><p>{$berita->isi}<br><br> <a href='vacancy.html'>Lihat Selengkapnya Disini</a></p></center>
 
       </div>
     </div>
-  </div>
+  </div>";
+}?>
   <!--berita end-->
 
-  <!--Berita-->
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <br>
-      <img src="images/briefcase.png" width="150px"; height="150px";>
-      <div class="caption">
-        <center><h3>PT. IndoKarya Membuka Lowongan Pekerjaan</h3></center>
-        <br>
-        <center><p>PT. IndoKarya yang bergerak dibidang otomatif membuka lowongan pekerjaan pada bidang tertentu, bid[....]<br><br> <a href="vacancy.html">Lihat Selengkapnya Disini</a></p></center>
-      </div>
-    </div>
-  </div>
-  <!--berita end-->
-
-  <!--Berita-->
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <br>
-      <img src="images/briefcase.png" width="150px"; height="150px";>
-      <div class="caption">
-        <center><h3>Lowongan Pekerjaan PT. Sriwijaya Indo Jakarta</h3></center>
-        <br>
-        <center><p>PT Sriwijaya Indo membuka lowongan pekerjaan di Jakarta, adapun pekerjaan yang ditawark[....]<br><br> <a href="vacancy.html">Lihat Selengkapnya Disini</a></p></center>
-      </div>
-    </div>
-  </div>
-  <!--berita end-->
+  
 </div>
 
 <div class="clearfix"></div>

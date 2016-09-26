@@ -41,16 +41,16 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="admin.html">Dashboard</a>
                 </li>
                 <li>
-                    <a href="list.html">Apply List</a>
+                    <a href="applylist.php">Apply List</a>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><font color="red"><a href="addnews.html">Add News</a></font></li>
-                    <li><font color="red"><a href="news.html">List News</a></font></li>
+                    <li><font color="red"><a href="news.php">List News</a></font></li>
                   </ul>
                 </li>
             </ul>
@@ -65,20 +65,36 @@
                           <!--<h1>Hello, Admin !</h1>-->
                           <div class="panel panel-default">
                           <!-- Default panel contents -->
-                          <div class="panel-heading">List of News</div>
+                          <div class="panel-heading">List of Vacancy Apply</div>
 
                           <!-- Table -->
                           <table class="table">
                             <thead>
                                 <th>No.</th>
-                                <th>Title</th>
-                                <th>News</th>
+                                <th>Nama</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                                <th>Jobdesk</th>
                             </thead>
+                            <?php
+                            // untuk meload data xml (buku.xml) dengan cara SimpleXML 
+                            $books = new SimpleXMLElement('pelamar.xml', null, true);
+                             
+                            // menampilkan data ke XML ke dalam tabel HTML
+                            // melakukan looping penampilan data buku
+                            foreach($books as $buku)
+                            {
+                            echo "
                             <tbody>
-                                <td>1</td>
-                                <td>PT. IndoKarya membuka lowongan</td>
-                                <td>PT. IndoKarya telah membuka lowongan baru</td>
-                            </tbody>
+                                <td>{$buku->id_pelamar}</td>
+                                <td>{$buku->nama}</td>
+                                <td>{$buku->email}</td>
+                                <td>{$buku->address}</td>
+                                <td>{$buku->jobdesk}</td>
+                            </tbody>";
+                            }
+                            ?>
+
                           </table>
                         </div>
                         </div>

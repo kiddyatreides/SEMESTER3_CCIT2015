@@ -17,6 +17,8 @@
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,7 +40,7 @@
                         Admin Recruitment Page
                     </a>
                 </li>
-               <li>
+                <li>
                     <a href="admin.html">Dashboard</a>
                 </li>
                 <li>
@@ -53,7 +55,6 @@
                 </li>
             </ul>
         </div>
-        <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -61,9 +62,37 @@
                 <div class="row">
                     <div class="col-lg-12">
                        <div class="jumbotron">
-                          <h1>Hello, Admin !</h1>
-                          <p>Welcome to Admin Dashboard, for list apply of vacancy you can see at link bellow</p>
-                          <p><a class="btn btn-primary btn-lg" href="applylist.php" role="button">See More</a></p>
+                          <!--<h1>Hello, Admin !</h1>-->
+                          <div class="panel panel-default">
+                          <!-- Default panel contents -->
+                          <div class="panel-heading">List of News</div>
+
+                          <!-- Table -->
+                          <table class="table">
+                            <thead>
+                                <th>No.</th>
+                                <th>Title</th>
+                                <th>News</th>
+                            </thead>
+                            <?php
+                            // untuk meload data xml (buku.xml) dengan cara SimpleXML 
+                            $books = new SimpleXMLElement('berita.xml', null, true);
+                             
+                            // menampilkan data ke XML ke dalam tabel HTML
+                            // melakukan looping penampilan data buku
+                            foreach($books as $buku)
+                            {
+                            echo "
+                            <tbody>
+                                <td>{$buku->id_berita}</td>
+                                <td>{$buku->judul}</td>
+                                <td>{$buku->isi}</td>
+                            </tbody>";
+                            }
+                            ?>
+
+                          </table>
+                        </div>
                         </div>
                     </div>
                 </div>
