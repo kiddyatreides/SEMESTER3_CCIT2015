@@ -27,18 +27,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Vacancy</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">F.A.Q</a></li>
-            <li><a href="#">How to register</a></li>
-            <li><a href="#">How to apply job</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <form class="navbar-form navbar-left">
@@ -121,15 +113,6 @@
   <center> <h1>Berita Lowongan</h1></center>
   <div class="row">
   <!--Berita-->
-  <?php
-// untuk meload data xml (buku.xml) dengan cara SimpleXML 
-$news = new SimpleXMLElement('berita.xml', null, true);
- 
-// menampilkan data ke XML ke dalam tabel HTML
- // melakukan looping penampilan data buku
-foreach($news as $berita)
-{
-  echo "
   <div class='col-sm-6 col-md-4'>
     <div class='thumbnail'>
       <br>
@@ -141,8 +124,7 @@ foreach($news as $berita)
 
       </div>
     </div>
-  </div>";
-}?>
+  </div>
   <!--berita end-->
 
   

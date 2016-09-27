@@ -65,32 +65,44 @@
                           <!--<h1>Hello, Admin !</h1>-->
                           <div class="panel panel-default">
                           <!-- Default panel contents -->
-                          <div class="panel-heading">List of News</div>
+                          <div class="panel-heading">List of Vacancy Apply</div>
 
                           <!-- Table -->
-                          <table class="table">
-                            <thead>
-                                <th>No.</th>
-                                <th>Title</th>
-                                <th>News</th>
-                            </thead>
-                            <?php
-                            // untuk meload data xml (buku.xml) dengan cara SimpleXML 
-                            $books = new SimpleXMLElement('berita.xml', null, true);
-                             
-                            // menampilkan data ke XML ke dalam tabel HTML
-                            // melakukan looping penampilan data buku
-                            foreach($books as $buku)
-                            {
-                            echo "
-                            <tbody>
-                                <td>{$buku->id_berita}</td>
-                                <td>{$buku->judul}</td>
-                                <td>{$buku->isi}</td>
-                            </tbody>";
-                            }
-                            ?>
-
+                          <table cellpadding="5" cellspacing="0" bordercolor="#800000" style="border-collapse: collapse">       
+                  <tr>
+                    <td style="border-style: solid; border-width: 1"><div align="center"><b>No. </b></div></td>
+                    <td style="border-style: solid; border-width: 1"><div align="center"><b>Name </b></div></td> 
+                    <td style="border-style: solid; border-width: 1"><div align="center"><b>Email </b></div></td>
+                    <td style="border-style: solid; border-width: 1"><div align="center"><b>Address &nbsp; </b></div></td>
+                    <td style="border-style: solid; border-width: 1"><div align="center"><b>Jobdesk </b></div></td>
+                  </tr>
+                            
+                                 <Script language="javascript">
+                    var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+                    function verify() 
+                    { 
+                        if (xmlDoc.readyState != 4) 
+                        { 
+                            return false; 
+                        } 
+                    }
+                    xmlDoc.async="false"; 
+                    xmlDoc.onreadystatechange=verify; 
+                    xmlDoc.load("pelamar.xml"); 
+                    xmlObj=xmlDoc.documentElement;
+                    var len = xmlObj.childNodes.length;
+                    for(i=0;i<len;i++)
+                    {
+                     var len1 = xmlObj.childNodes(0).childNodes.length;
+                     document.write("<tr>");
+                     for(j=0;j<len1;j++)
+                     {      
+              document.write("<td style='border-style:solid; border-width:1'><div align='center'> &nbsp;"+xmlObj.childNodes(i).childNodes(j).text+"</div></td>");
+                     }  
+                     document.write("</tr>");
+                    }   
+                    </Script>          
+                            
                           </table>
                         </div>
                         </div>

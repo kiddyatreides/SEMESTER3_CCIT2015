@@ -1,17 +1,17 @@
 <news>
-	<id id_berita="1">
+	<berita>
 		<id_berita>1</id_berita>
 		<judul>Lowongan Pekerjaan BNI Tahap 2</judul>
 		<isi>Bank Nasional Indonesia akhirnya membuka lowongan pekerjaan, ada beberapa kategori yang dib[....]</isi>
-	</id>
-	<id id_berita="2">
+	</berita>
+	<berita>
 		<id_berita>2</id_berita>
 		<judul>PT. IndoKarya Membuka Lowongan Pekerjaan</judul>
 		<isi>PT. IndoKarya yang bergerak dibidang otomatif membuka lowongan pekerjaan pada bidang tertentu, bid[....]</isi>
-	</id>
-	<id id_berita="3">
+	</berita>
+	<berita>
 		<id_berita>3</id_berita>
 		<judul>Lowongan Pekerjaan PT. Sriwijaya Indo Jakarta</judul>
 		<isi>PT Sriwijaya Indo membuka lowongan pekerjaan di Jakarta, adapun pekerjaan yang ditawark[....]</isi>
-	</id>
-</news>
+	</berita>
+	<berita><id_berita>3</id_berita><judul>asd</judul><isi>asdads</isi></berita><berita><id_berita>ads</id_berita><judul></judul><isi>ads</isi></berita></news>

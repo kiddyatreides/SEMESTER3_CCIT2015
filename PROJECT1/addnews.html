@@ -20,12 +20,62 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <script language="javascript">
+        function tambah()
+        {
+             var xmldoc= new ActiveXObject("Msxml2.DOMDocument");          
+             xmldoc.load("berita.xml");      
+             var error=xmldoc.parseError;
+                if(xmldoc.readyState==4 && xmldoc.parseError.errorCode==0)
+                {
+                    var kritikdetails;
+                    var kritik;
+                    var nama;    
+                    var email;    
+                    var nohp;
+                    var saran;    
+                    var nama1=x.no2.value;    
+                    var email1=x.title2.value;   
+                    var nohp1=x.news2.value;
+
+                    var y = xmldoc.getElementsByTagName("news")[0];    
+                    kritik=xmldoc.createElement("berita");    
+                    y.appendChild(kritik);
+
+                    objelementskritik=xmldoc.getElementsByTagName("berita");    
+                    last=objelementskritik.length;    
+                    y=objelementskritik[last-1];           
+
+                    nama=xmldoc.createElement("id_berita");    
+                    y.appendChild(nama);    
+                    y.lastChild.text = nama1;           
+                    
+                    email=xmldoc.createElement("judul");    
+                    y.appendChild(email);    
+                    y.lastChild.text = email1;      
+
+                    nohp=xmldoc.createElement("isi");    
+                    y.appendChild(nohp);    
+                    y.lastChild.text = nohp1;
+
+
+                    alert(xmldoc.xml);
+
+                    //MENYIMPAN KE FILE    
+                    var OutputXML = xmldoc.xml;    
+                    var mfObject, NewSampleFile;    
+                    mfObject = new ActiveXObject("Scripting.FileSystemObject");    
+                    NewSampleFile = mfObject.CreateTextFile("D:/DFile/Kampus/CCIT/Semester3/PROJECT1/berita.xml", true);       
+
+                    NewSampleFile.write(OutputXML);    
+                    NewSampleFile.close();           
+                }
+                else
+                {
+                    alert("Failed to Load Document");
+                } 
+        }
+    </script>
 
 </head>
 
@@ -45,7 +95,7 @@
                     <a href="#">Dashboard</a>
                 </li>
                 <li>
-                    <a href="list.html">Apply List</a>
+                    <a href="applylist.html">Apply List</a>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
@@ -72,25 +122,36 @@
         <hr/>
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-6">
-              <form>
-                <div class="form-group">
-                  <label for="title">Title</label>
-                  <input type="text" class="form-control" id="title" placeholder="Title News">
-                </div>
-                <div class="form-group">
-                  <label for="contains">Contains</label>
-                  <textarea type="text" class="form-control" id="contains" ></textarea>
-                </div>
-                
-                <div class="form-group">
-                  <label for="photo">Image Header</label>
-                  <input type="file" id="photo" >
-                  <div class="field-label"> <span class="required">*</span><font color="red"> Required</font></div>
-                <div class="field-label"> You can upload GIF, JPEG, JPG, PNG, PDF</div>
-                <div class="field-label"> <span class="required">*</span><font color="red"> Max 1MB File</font></div>
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-              </form>
+              <FORM name="x">
+                <table border="0" align="center">
+                  <tr>    
+                      <td>
+                        <label for="register[ID]">No</label>
+                      </td>
+                    <td> &nbsp;<input type=text name="no2" placeholder="" > </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="register[Name]">Title</label>
+                      </td><td>&nbsp;<input type="text" name="title2" id="name" required="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="register[Desc]">News </label>
+                    </td>
+                    <td>&nbsp;<textarea name="news2"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan ="4" align="center">
+                    <br>
+                      <input type="submit" value="Simpan" onclick="javascript:tambah()">
+                    <input type="reset" value="Reset">
+                    </td>            
+                  </tr>
+                </table>
+                </FORM>
             </div>      
         </div><!-- /row -->
         <hr/>

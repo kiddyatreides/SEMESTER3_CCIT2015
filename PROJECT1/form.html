@@ -8,6 +8,88 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+
+    <SCRIPT language="JavaScript">
+
+function validate()
+{
+    submitOK="True"
+    x=document.form1
+    account_na=x.name.value
+    if (account_na.length==0)
+    {
+        alert("Name field cannot remain blank. Please provide the your name")
+        return false
+    }
+    ordering_add=x.address.value
+    if (ordering_add.length==0)
+    {
+        alert("Address field cannot remain blank. Please provide the address")
+        return false
+    }
+    email2=x.email.value
+    if (email2.length==0)
+    {
+        alert("Email field cannot remain blank. Please provide the email")
+        return false
+    }
+    file2=x.file.value
+    if (file2.length==0)
+    {
+        alert("CV field cannot remain blank. Please upload your CV")
+        return false
+    }
+    
+    return true
+}
+
+QueryString_keys = new Array();
+QueryString_values = new Array();
+
+function QueryString_Parse()
+{
+  var query = window.location.search.substring(1);  
+    var pairs = query.split("&"); 
+  for (var i=0;i<pairs.length;i++)
+  {
+
+    var pos = pairs[i].indexOf('=');
+    if (pos >= 0)
+    {
+      var argname = pairs[i].substring(0,pos);      
+      var value = pairs[i].substring((pos+1),pairs[i].length);
+          QueryString_keys[i] = argname;
+      QueryString_values[i] = value;    
+    }
+  }
+
+}
+
+function QS()
+{
+  QueryString_Parse();
+  var tbladd = document.getElementById("tbladd");
+  var inrows = tbladd.rows.length;
+  len = 0;
+  for(i=0;i<QueryString_keys.length;i=i+4)
+  {
+    if(QueryString_values[i+3]!=0)
+    {
+      tbladd.insertRow(inrows);
+      
+      var tblrows = tbladd.rows;
+      tblrows[inrows].insertCell(0);
+        
+      var RowCells =tbladd.rows[inrows].cells;
+      
+      RowCells[0].innerHTML = "<input type='hidden' name='"+QueryString_keys[i]+"' value='"+QueryString_values[i]+"'><input type='hidden' name='"+QueryString_keys[i+1]+"' value='"+QueryString_values[i+1]+"'><input type='hidden' name='"+QueryString_keys[i+2]+"' value='"+QueryString_values[i+2]+"'><input type='hidden' name='"+QueryString_keys[i+3]+"' value='"+QueryString_values[i+3]+"'>"      
+      inrows++;     
+    }
+  } 
+}
+</SCRIPT>
+
 </head>
 <body>
 <!--navbar atasasdsadsa-->
@@ -27,17 +109,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Vacancy</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">F.A.Q</a></li>
-            <li><a href="#">How to register</a></li>
-            <li><a href="#">How to apply job</a></li>
-          </ul>
-        </li>
         <li><a href="#">Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -78,47 +152,44 @@
         <hr/>
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-6">
-              <form>
-                <div class="form-group">
-                  <label for="name">Full Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Full Name">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                  <label for="address">Address</label>
-                  <textarea type="text" class="form-control" id="email" ></textarea>
-                </div>
-                <div class="form-group">
-                <label for="jobdesk">Jobdesk </label> &nbsp;
-                    <select name="Lowongan" class="form-control" id="jobdesk">
-                      <option value="#"></option>
-                      <option value="1">Programmer</option>
-                      <option value="1">System Analyst</option>
-                      <option value="1">IT Manager</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                  <label for="email">CV Upload</label>
-                  <input type="file" id="email" >
-                  <div class="field-label"> <span class="required">*</span><font color="red"> Required</font></div>
-                <div class="field-label"> You can upload GIF, JPEG, JPG, PNG, PDF</div>
-                <div class="field-label"> <span class="required">*</span><font color="red"> Max 1MB File</font></div>
-                </div>
-
-
-                <div class="form-group">
-                  <label for="email">Qualication Upload</label>
-                  <input type="file" id="email" >
-                  <div class="field-label"> <span class="required">*</span><font color="red"> Required</font></div>
-                <div class="field-label"> You can upload GIF, JPEG, JPG, PNG, PDF</div>
-                <div class="field-label"> <span class="required">*</span><font color="red"> Max 1MB File</font></div>
-                </div>
-
-                <button type="submit" class="btn btn-default">Submit</button>
-              </form>
+            <!--codingan ccit-->
+              <FORM name="form1" action="card.html" method="get" onSubmit="return validate()">
+            Please provide your information :
+              </P>
+              <BLOCKQUOTE>
+              <TABLE width="498" id="tbladd">
+              <TR>
+                <TD >&nbsp;</TD>
+                <TD  colspan="2" >&nbsp;</TD>
+              </TR>
+              <TR>
+                <TD >&nbsp;</TD>
+                <TD width="162" ><EM>Name</EM></TD>
+                <TD width="319" ><INPUT TYPE=TEXT NAME="name" SIZE=25></TD>
+              </TR>
+              <TR>  
+                <TD >&nbsp;</TD>
+                <TD ><EM>Address</EM></TD>
+                <TD ><INPUT TYPE=TEXT NAME="address" SIZE=35></TD>
+              </TR>
+              <TR>
+                <TD height="26" >&nbsp;</TD>
+                <TD ><EM>Email</EM></TD>
+                <TD ><INPUT TYPE=EMAIL NAME="email" SIZE=35></TD>
+              </TR>
+              <TR>
+                <TD height="26" >&nbsp;</TD>
+                <TD ><EM>CV</EM></TD>
+                <TD ><INPUT TYPE=FILE NAME="file" SIZE=35></TD>
+              </TR>
+              </TABLE>
+              </BLOCKQUOTE>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE=SUBMIT VALUE="Submit Form">
+               <input name="RESET" type=RESET value="Reset Form">
+          </FORM></TD>  
+    </TR>  
+</TABLE>
+<!--coding ccit end-->
             </div>      
         </div><!-- /row -->
         <hr/>
