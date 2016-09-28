@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ITEMSDETAILS>
+	<ITEMS>
+		<ID>P001</ID>
+		<Name>Sepatu kaca</Name>
+		<Phone>089612314509</Phone>
+		<Email>johninsan@gmail.com</Email>
+		<DescriptionLostItems>green</DescriptionLostItems>
+		<LastSeenItem>january</LastSeenItem>
+		<WhenLostItem>20 january 2016</WhenLostItem>
+		<Status>Found</Status>
+	</ITEMS>
+	<ITEMS>
+	<ID>P002</ID>
+	<Name>Ulfa Mulyantika</Name>
+	<Phone>092381</Phone>
+	<Email>Ulfa_mulyantika@yahoo.com</Email>
+	<DescriptionLostItems>HP casing hitam</DescriptionLostItems>
+	<LastSeenItem>Mushola</LastSeenItem>
+	<WhenLostItem>Selasa, 12 September 2016</WhenLostItem>
+	<Status>Found</Status>
+	</ITEMS></ITEMSDETAILS>

@@ -1,23 +1,19 @@
-<pelamar>
+<?xml version="1.0" encoding="UTF-8"?>
+<pelamar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:pelamar.xsd">
 	<datapelamar>
-		<id_pelamar>1</id_pelamar>
 		<nama>M Hudya Ramadhana</nama>
 		<email>kiddydhana@gmail.com</email>
 		<address>Jakarta</address>
-		<jobdesk>Programmer</jobdesk>
 	</datapelamar>
 	<datapelamar>
-		<id_pelamar>2</id_pelamar>
 		<nama>Mutia Ayu Dianita</nama>
 		<email>mutiaayudianita@gmail.com</email>
 		<address>Bogor</address>
-		<jobdesk>IT Manager</jobdesk>
 	</datapelamar>
 	<datapelamar>
-		<id_pelamar>3</id_pelamar>
 		<nama>Ugi Ispoyo Widodo</nama>
 		<email>ugiispoyowidodo@gmail.com</email>
 		<address>Bogor</address>
-		<jobdesk>Programmer</jobdesk>
 	</datapelamar>
 </pelamar>

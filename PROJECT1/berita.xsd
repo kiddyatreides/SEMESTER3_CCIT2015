@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="news" type="beritadata"/>
+    <xs:complexType name="beritadata">
+        <xs:sequence>
+            <xs:element name="berita" type="isiberita" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="isiberita">
+        <xs:sequence>
+            <xs:element name="id_berita" type="berita_id" />
+            <xs:element name="judul" type="xs:string"/>
+            <xs:element name="isi" type="xs:string" />
+        </xs:sequence>  
+    </xs:complexType>
+    <xs:simpleType name="berita_id">
+        <xs:restriction base="xs:string">
+			<xs:length value="4"/>
+            <xs:pattern value="[B][0-9][0-9][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

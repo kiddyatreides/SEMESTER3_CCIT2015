@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Admin Recruitment Online</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+  <script src="js/jquery.min.js"></script>
+    
+      <script language="javascript">
+        function tambah()
+        {
+             var xmldoc= new ActiveXObject("Msxml2.DOMDocument");          
+             xmldoc.load("pelamar.xml");      
+             var error=xmldoc.parseError;
+                if(xmldoc.readyState==4 && xmldoc.parseError.errorCode==0)
+                {
+                    var kritikdetails;
+                    var kritik;
+                    var nama;    
+                    var email;    
+                    var nohp;
+                    var saran;    
+                    var nama1=x.no2.value;    
+                    var email1=x.title2.value;   
+                    var nohp1=x.alamat.value;
+
+                    var y = xmldoc.getElementsByTagName("pelamar")[0];    
+                    kritik=xmldoc.createElement("datapelamar");    
+                    y.appendChild(kritik);
+
+                    objelementskritik=xmldoc.getElementsByTagName("datapelamar");    
+                    last=objelementskritik.length;    
+                    y=objelementskritik[last-1];           
+
+                    nama=xmldoc.createElement("name");    
+                    y.appendChild(nama);    
+                    y.lastChild.text = nama1;           
+                    
+                    email=xmldoc.createElement("email");    
+                    y.appendChild(email);    
+                    y.lastChild.text = email1;      
+
+                    nohp=xmldoc.createElement("address");    
+                    y.appendChild(nohp);    
+                    y.lastChild.text = nohp1;
+
+
+                    alert(xmldoc.xml);
+
+                    //MENYIMPAN KE FILE    
+                    var OutputXML = xmldoc.xml;    
+                    var mfObject, NewSampleFile;    
+                    mfObject = new ActiveXObject("Scripting.FileSystemObject");    
+                    NewSampleFile = mfObject.CreateTextFile("D:/DFile/Kampus/CCIT/Semester3/PROJECT1/pelamar.xml", true);       
+
+                    NewSampleFile.write(OutputXML);    
+                    NewSampleFile.close();           
+                }
+                else
+                {
+                    alert("Failed to Load Document");
+                } 
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Admin Recruitment Page
+                    </a>
+                </li>
+                <li>
+                    <a href="admin.html">Dashboard</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programmer <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                    <a href="listapply.html">Programmers List</a>
+                    </li>
+                    <li>
+                    <a href="addpegawai.html">Add Programmer</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><font color="red"><a href="addnews.html">Add News</a></font></li>
+                    <li><font color="red"><a href="news.html">List News</a></font></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                       <div class="jumbotron">
+                              <div class="row">
+            <div class="col-md-12 text-center">
+            <h3>Add News Form</h3>
+            </div>
+        </div><!-- /row -->
+        <hr/>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <FORM name="x">
+                <table border="0" align="center">
+                  <tr>    
+                      <td>
+                        <label for="register[ID]">Name</label>
+                      </td>
+                    <td> &nbsp;<input type=text name="no2" placeholder="" > </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="register[Name]">Email</label>
+                      </td><td>&nbsp;<input type="text" name="title2" id="name" required="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="register[Desc]">Address </label>
+                    </td>
+                    <td>&nbsp;<textarea name="alamat"></textarea>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td colspan ="4" align="center">
+                    <br>
+                      <input type="submit" value="Simpan" onclick="javascript:tambah()">
+                    <input type="reset" value="Reset">
+                    </td>            
+                  </tr>
+                </table>
+                </FORM>
+            </div>      
+        </div><!-- /row -->
+        <hr/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

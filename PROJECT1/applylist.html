@@ -17,8 +17,13 @@
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
 
+    <script src="js/jquery.min.js"></script>
+       <script type="text/javascript" src="DataTables/media/js/jquery.js"></script>
+    <script type="text/javascript" src="DataTables/media/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="DataTables/media/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="DataTables/media/css/dataTables.bootstrap.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,13 +49,13 @@
                     <a href="admin.html">Dashboard</a>
                 </li>
                 <li>
-                    <a href="applylist.php">Apply List</a>
+                    <a href="applylist.html">Apply List</a>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><font color="red"><a href="addnews.html">Add News</a></font></li>
-                    <li><font color="red"><a href="news.php">List News</a></font></li>
+                    <li><font color="red"><a href="news.html">List News</a></font></li>
                   </ul>
                 </li>
             </ul>
@@ -68,13 +73,13 @@
                           <div class="panel-heading">List of Vacancy Apply</div>
 
                           <!-- Table -->
-                          <table cellpadding="5" cellspacing="0" bordercolor="#800000" style="border-collapse: collapse">       
+                          <table class=" table table-striped table-bordered data" cellpadding="5" cellspacing="0" bordercolor="#800000" style="border-collapse: collapse">       
                   <tr>
-                    <td style="border-style: solid; border-width: 1"><div align="center"><b>No. </b></div></td>
-                    <td style="border-style: solid; border-width: 1"><div align="center"><b>Name </b></div></td> 
-                    <td style="border-style: solid; border-width: 1"><div align="center"><b>Email </b></div></td>
-                    <td style="border-style: solid; border-width: 1"><div align="center"><b>Address &nbsp; </b></div></td>
-                    <td style="border-style: solid; border-width: 1"><div align="center"><b>Jobdesk </b></div></td>
+                    <td ><div align="center"><b>No. </b></div></td>
+                    <td ><div align="center"><b>Name </b></div></td> 
+                    <td ><div align="center"><b>Email </b></div></td>
+                    <td ><div align="center"><b>Address &nbsp; </b></div></td>
+                    <td ><div align="center"><b>Jobdesk </b></div></td>
                   </tr>
                             
                                  <Script language="javascript">
@@ -97,7 +102,7 @@
                      document.write("<tr>");
                      for(j=0;j<len1;j++)
                      {      
-              document.write("<td style='border-style:solid; border-width:1'><div align='center'> &nbsp;"+xmlObj.childNodes(i).childNodes(j).text+"</div></td>");
+              document.write("<td><div align='center'> &nbsp;"+xmlObj.childNodes(i).childNodes(j).text+"</div></td>");
                      }  
                      document.write("</tr>");
                     }   
@@ -117,10 +122,14 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+    
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.data').DataTable();
+      });
+    </script>
 </body>
 
 </html>

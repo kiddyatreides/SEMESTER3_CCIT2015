@@ -1,0 +1,107 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <script language="javascript">
+        function tambah()
+        {
+             var xmldoc= new ActiveXObject("Msxml2.DOMDocument");          
+             xmldoc.load("kritik.xml");      
+             var error=xmldoc.parseError;
+                if(xmldoc.readyState==4 && xmldoc.parseError.errorCode==0)
+                {
+                    var kritikdetails;
+                    var kritik;
+                    var nama;    
+                    var email;    
+                    var nohp;
+                    var saran;    
+                    var nama1=x.nama2.value;    
+                    var email1=x.email2.value;   
+                    var nohp1=x.nohp2.value;
+                    var saran1=x.saran2.value;
+
+                    var y = xmldoc.getElementsByTagName("kritikdetails")[0];    
+                    kritik=xmldoc.createElement("kritik");    
+                    y.appendChild(kritik);
+
+                    objelementskritik=xmldoc.getElementsByTagName("kritik");    
+                    last=objelementskritik.length;    
+                    y=objelementskritik[last-1];           
+
+                    nama=xmldoc.createElement("nama");    
+                    y.appendChild(nama);    
+                    y.lastChild.text = nama1;           
+                    
+                    email=xmldoc.createElement("email");    
+                    y.appendChild(email);    
+                    y.lastChild.text = email1;      
+
+                    nohp=xmldoc.createElement("nohp");    
+                    y.appendChild(nohp);    
+                    y.lastChild.text = nohp1;
+
+                    saran=xmldoc.createElement("saran");    
+                    y.appendChild(saran);    
+                    y.lastChild.text = saran1;
+
+                    alert(xmldoc.xml);
+
+                    //MENYIMPAN KE FILE    
+                    var OutputXML = xmldoc.xml;    
+                    var mfObject, NewSampleFile;    
+                    mfObject = new ActiveXObject("Scripting.FileSystemObject");    
+                    NewSampleFile = mfObject.CreateTextFile("D:/CCIT FTUI/E-Library Project/kritik.xml", true);       
+
+                    NewSampleFile.write(OutputXML);    
+                    NewSampleFile.close();           
+                }
+                else
+                {
+                    alert("Failed to Load Document");
+                } 
+        }
+    </script>
+</head>
+<body>
+    <FORM name="x">
+
+                                <table border="0" align="center">
+                                <tr>    <td>
+                                        <label for="register[ID]">Nama</label>
+                                        </td>
+                                        <td> <input type=text name="nama2"> </td>
+                                        
+                                </tr>
+                                <tr>
+                                        <td>
+                                        <label for="register[Name]">Email</label>
+                                        </td><td><input type="text"
+                                               name="email2"
+                                               id="name" required>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>
+                                        <label for="register[Phone]">No Hp</label>
+                                        </td><td><input type="text"
+                                               name="nohp2"
+                                               id="phone" required>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>
+                                        <label for="register[Desc]">Kritik dan Saran</label>
+                                        </td><td><textarea name="saran2"></textarea>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td colspan ="4" align="center"><input type="reset" value="Reset">
+                                    <input type="submit" value="Simpan" onclick="javascript:tambah()"></td>            
+                                </tr>
+                                        
+                                </table>
+                                </FORM>
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+<html>
+	<head>
+		<title>Account Register</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Lost And Found, Inc</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Items</a>
+									<ul>
+										<li><a href="user.html">Lost Items Register</a></li>
+										<li><a href="userlist.html">Lost Items List</a></li>
+										<li><a href="userchange.html">Found Items Register</a></li>
+										<li><a href="foundlist.html">Found Items List</a></li>
+									</ul>
+								</li>
+								<li><a href="howitworks.html">How It Works</a></li>
+								<li><a href="contactus.html">Contact Us</a></li>
+								<li><a href="aboutus.html">About Us</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+								<h2><a href="#">Lost Item Register</a></h2>
+							</header>
+							<p>
+							<FORM name="form1">
+								<table border="0" align="center">
+								<tr>	<td>
+										<label for="register[ID]">ID</label>
+										</td>
+										<td> <input type=text name="itemdtl"> </td>
+										
+								</tr>
+								<tr>
+										<td>
+										<label for="register[Name]">Name</label>
+										</td><td><input type="text"
+											   name="usname"
+											   id="name" required>
+										</td>
+								</tr>
+								<tr>
+										<td>
+										<label for="register[Phone]">Phone</label>
+										</td><td><input type="text"
+											   name="usphone"
+											   id="phone" required>
+										</td>
+								</tr>
+								<tr>
+										<td>
+										<label for="register[Email]">Email</label>
+										</td><td><input type="text"
+											   name="usemail"
+											   id="email" required>
+										</td>
+								</tr>
+								<tr>
+										<td>
+										<label for="register[Desc]">Description Lost Item</label>
+										</td><td><textarea name="usdli"></textarea>
+										</td>
+								</tr>
+								<tr>
+										<td>
+										<label for="register[Seen]">Last Seen Item</label>
+										</td><td><input type="text"
+											   name="uslsi"
+											   id="seen" required>
+										</td>
+								</tr>
+								<tr>
+										<td>
+										<label for="register[When]">When Lost Item</label>
+										</td><td><input type="text"
+											   name="uswli"
+											   id="when" required>
+										</td>
+								</tr>
+								<tr>
+										<td>
+										<label for="register[Status]">Status</label>
+										</td><td><input type="text"
+											   name="usstatus"
+											   id="image" required>
+										</td>
+								</tr>
+
+								<tr>
+									<td colspan ="4" align="center"><input type="reset" value="Reset">
+									<input type="submit" value="Publish" onclick="javascript:SimpanData()"></td>
+									<td> <input type=button value="Search" onClick="javascript:CariData()"></td>
+											
+								</tr>
+										
+								</table>
+								</FORM>
+							</p>
+							
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Need More Information?</h3>
+										</header>
+										<p>Contact Us! </p>
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+											<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li>
+										</ul>
+									</div>
+
+
+							</div>
+
+						</div>
+					</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.onvisible.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			
+<SCRIPT language="javascript">
+		function insertXMLData()
+		{
+			var xmldoc= new ActiveXObject("Msxml2.DOMDocument");
+			xmldoc.load("items.xml");
+			var error=xmldoc.parseError;
+			if(xmldoc.readyState==4 && xmldoc.parseError.errorCode==0)
+		{
+			var ITEMS;
+			var ITEMSDETAILS;
+			var ID;
+			var NAME;
+			var PHONE;
+			var EMAIL;
+			var DESCRIPTIONLOSTITEMS;
+			var LASTSEENITEMS;
+			var WHENLOSTITEMS;
+			var IMAGELOSTITEM;
+			var STATUS;
+			var userID=form1.usid.value;
+			var username= form1.usname.value;
+			var phone=form1.usphone.value;
+			var email=form1.usemail.value;
+			var dli=form1.usdli.value;
+			var lsi=form1.uslsi.value;
+			var wli=form1.uswli.value;
+			var ili=form1.usili.value;
+			var sta=form1.usstatus.value;
+			
+				var y = xmldoc.getElementsByTagName("ITEMSDETAILS")[0];
+				ITEMS=xmldoc.createElement("ITEMS");
+				y.appendChild(ITEMS);
+				
+				objelementsITEMS=xmldoc.getElementsByTagName("ITEMS");
+				last=objelementsITEMS.length;
+				y=objelementsITEMS[last-1];
+				
+				ID=xmldoc.createElement("ID");
+				y.appendChild(ID);
+				y.lastChild.text = userID;
+				
+				NAME=xmldoc.createElement("Name");
+				y.appendChild(NAME);
+				y.lastChild.text = username;
+				
+				PHONE=xmldoc.createElement("Phone");
+				y.appendChild(PHONE);
+				y.lastChild.text = phone;
+				
+				EMAIL=xmldoc.createElement("Email");
+				y.appendChild(EMAIL);
+				y.lastChild.text = email;
+
+				DESCRIPTIONLOSTITEMS=xmldoc.createElement("DescriptionLostItems");
+				y.appendChild(DESCRIPTIONLOSTITEMS);
+				y.lastChild.text = dli;
+
+				LASTSEENITEMS=xmldoc.createElement("LastSeenItem");
+				y.appendChild(LASTSEENITEMS);
+				y.lastChild.text = lsi;
+				
+				WHENLOSTITEMS=xmldoc.createElement("WhenLostItem");
+				y.appendChild(WHENLOSTITEMS);
+				y.lastChild.text = wli;
+
+				IMAGELOSTITEM=xmldoc.createElement("ImageLostItem");
+				y.appendChild(IMAGELOSTITEM);
+				y.lastChild.text = ili;
+				
+				STATUS=xmldoc.createElement("Status");
+				y.appendChild(STATUS);
+				y.lastChild.text = sta;
+				alert(xmldoc.xml);
+				
+		//MENYIMPAN KE FILE
+		var OutputXML = xmldoc.xml;
+		var mfObject, NewSampleFile;
+		mfObject = new ActiveXObject("Scripting.FileSystemObject");
+		NewSampleFile = mfObject.CreateTextFile("C:/Users/John/Desktop/ccit/project 10/project.xml", true);
+		NewSampleFile.write(OutputXML);
+		NewSampleFile.close();
+		}
+		else
+		{
+		alert("Failed to Load Document");
+		}
+		}
+</SCRIPT>
+<SCRIPT language="JavaScript">
+		function CariData()
+		{
+		var xmldoc= new ActiveXObject("Msxml2.DOMDocument");
+		xmldoc.load("items.xml");
+		var error=xmldoc.parseError;
+		if(error!="")
+		{
+		document.write("Error, alasan : "+error.reason);
+		return false;
+		}
+		else
+		{
+		var ITEMSDETAILS = form1.itemdtl.value;
+		var ID=xmldoc.getElementsByTagName("ID");
+		var name=xmldoc.getElementsByTagName("Name");
+		var phone=xmldoc.getElementsByTagName("Phone");
+		var email=xmldoc.getElementsByTagName("Email");
+		var dli=xmldoc.getElementsByTagName("DescriptionLostItems");
+		var lsi=xmldoc.getElementsByTagName("LastSeenItem");
+		var wli=xmldoc.getElementsByTagName("WhenLostItem");
+		var sta=xmldoc.getElementsByTagName("Status");
+		for(ctr=0; ctr<ID.length;ctr++)
+		{
+			if (ID[ctr].text==ITEMSDETAILS)
+		{
+			form1.usname.value = name[ctr].text;
+			form1.usphone.value = phone[ctr].text;
+			form1.usemail.value = email[ctr].text;
+			form1.usdli.value = dli[ctr].text;
+			form1.uslsi.value = lsi[ctr].text;
+			form1.uswli.value = wli[ctr].text;
+			form1.usstatus.value = sta[ctr].text;
+		
+			break;
+		}
+		}
+		}
+		}
+	</SCRIPT>
+<SCRIPT language="JavaScript">
+function CariData() {
+var xmldoc= new ActiveXObject("Msxml2.DOMDocument");
+xmldoc.load("items.xml");
+var error=xmldoc.parseError;
+if(error!="")
+{
+document.write("Error, alasan : "+error.reason);
+return false;
+}
+else
+{
+var ITEMSDETAILS = form1.itemdtl.value;
+var ID=xmldoc.getElementsByTagName("ID");
+var name=xmldoc.getElementsByTagName("Name");
+var phone=xmldoc.getElementsByTagName("Phone");
+var email=xmldoc.getElementsByTagName("Email");
+var dli=xmldoc.getElementsByTagName("DescriptionLostItems");
+var lsi=xmldoc.getElementsByTagName("LastSeenItem");
+var wli=xmldoc.getElementsByTagName("WhenLostItem");
+var sta=xmldoc.getElementsByTagName("Status");
+for(ctr=0; ctr<ID.length;ctr++)
+{
+if (ID[ctr].text==ITEMSDETAILS)
+{
+form1.usname.value = name[ctr].text;
+form1.usphone.value = phone[ctr].text;
+form1.usemail.value = email[ctr].text;
+form1.usdli.value = dli[ctr].text;
+form1.uslsi.value = lsi[ctr].text;
+form1.uswli.value = wli[ctr].text;
+form1.usstatus.value=sta[ctr].text;
+break;
+} } } }
+function SimpanData() {
+var xmldoc= new ActiveXObject("Msxml2.DOMDocument");
+xmldoc.load("items.xml");
+var error=xmldoc.parseError;
+if(error!="") {
+document.write("Error, alasan : "+error.reason);
+return false; }
+else {
+var ITEMSDETAILS = form1.itemdtl.value;
+var ID=xmldoc.getElementsByTagName("ID");
+var name=xmldoc.getElementsByTagName("Name");
+var phone=xmldoc.getElementsByTagName("Phone");
+var email=xmldoc.getElementsByTagName("Email");
+var dli=xmldoc.getElementsByTagName("DescriptionLostItems");
+var lsi=xmldoc.getElementsByTagName("LastSeenItem");
+var wli=xmldoc.getElementsByTagName("WhenLostItem");
+var sta=xmldoc.getElementsByTagName("Status");
+for(ctr=0; ctr<ID.length;ctr++) {
+if (ID[ctr].text==ITEMSDETAILS) {
+name[ctr].text= form1.usname.value;
+phone[ctr].text=form1.usphone.value;
+email[ctr].text=form1.usemail.value;
+dli[ctr].text=form1.usdli.value;
+lsi[ctr].text=form1.uslsi.value;
+wli[ctr].text=form1.uswli.value;
+sta[ctr].text=form1.usstatus.value;
+break; } }
+alert(xmldoc.xml);
+//MENYIMPAN KE FILE
+var OutputXML = xmldoc.xml;
+var mfObject, NewSampleFile;
+mfObject = new ActiveXObject("Scripting.FileSystemObject");
+NewSampleFile = mfObject.CreateTextFile("C:/Users/John/Desktop/ccit/project 10/project/items.xml", true);
+NewSampleFile.write(OutputXML);
+NewSampleFile.close();
+} }
+</SCRIPT>
+	</body>
+</html>

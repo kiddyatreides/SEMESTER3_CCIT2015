@@ -1,17 +1,27 @@
-<news>
+<?xml version="1.0"?>
+<news xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:berita.xsd">
 	<berita>
-		<id_berita>1</id_berita>
+		<id_berita>B001</id_berita>
 		<judul>Lowongan Pekerjaan BNI Tahap 2</judul>
 		<isi>Bank Nasional Indonesia akhirnya membuka lowongan pekerjaan, ada beberapa kategori yang dib[....]</isi>
 	</berita>
 	<berita>
-		<id_berita>2</id_berita>
+		<id_berita>B002</id_berita>
 		<judul>PT. IndoKarya Membuka Lowongan Pekerjaan</judul>
 		<isi>PT. IndoKarya yang bergerak dibidang otomatif membuka lowongan pekerjaan pada bidang tertentu, bid[....]</isi>
 	</berita>
 	<berita>
-		<id_berita>3</id_berita>
+		<id_berita>B003</id_berita>
 		<judul>Lowongan Pekerjaan PT. Sriwijaya Indo Jakarta</judul>
 		<isi>PT Sriwijaya Indo membuka lowongan pekerjaan di Jakarta, adapun pekerjaan yang ditawark[....]</isi>
 	</berita>
-	<berita><id_berita>3</id_berita><judul>asd</judul><isi>asdads</isi></berita><berita><id_berita>ads</id_berita><judul></judul><isi>ads</isi></berita></news>
+	<berita>
+		<id_berita>B004</id_berita>
+		<judul>asd</judul>
+		<isi>asdads</isi>
+	</berita>
+	<berita>
+		<id_berita>B005</id_berita>
+		<judul>asdad</judul>
+		<isi>ads</isi></berita>
+	<berita><id_berita>B005o</id_berita><judul>Berita1</judul><isi>Berita</isi></berita><berita><id_berita>B0oo</id_berita><judul>lala</judul><isi>lala</isi></berita></news>

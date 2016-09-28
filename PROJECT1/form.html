@@ -6,9 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/bootstrap.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+  
   <script src="js/bootstrap.min.js"></script>
+ <script language="javascript">
+        function tambah()
+        {
+             var xmldoc= new ActiveXObject("Msxml2.DOMDocument");          
+             xmldoc.load("berita.xml");      
+             var error=xmldoc.parseError;
+                if(xmldoc.readyState==4 && xmldoc.parseError.errorCode==0)
+                {
+                    var kritikdetails;
+                    var kritik;
+                    var nama;    
+                    var email;    
+                    var nohp;
+                    var saran;    
+                    var nama1=x.no2.value;    
+                    var email1=x.title2.value;   
+                    var nohp1=x.news2.value;
 
+                    var y = xmldoc.getElementsByTagName("news")[0];    
+                    kritik=xmldoc.createElement("berita");    
+                    y.appendChild(kritik);
+
+                    objelementskritik=xmldoc.getElementsByTagName("berita");    
+                    last=objelementskritik.length;    
+                    y=objelementskritik[last-1];           
+
+                    nama=xmldoc.createElement("nama");    
+                    y.appendChild(nama);    
+                    y.lastChild.text = nama1;           
+                    
+                    email=xmldoc.createElement("email");    
+                    y.appendChild(email);    
+                    y.lastChild.text = email1;      
+
+                    nohp=xmldoc.createElement("address");    
+                    y.appendChild(nohp);    
+                    y.lastChild.text = nohp1;
+
+                    nohp=xmldoc.createElement("jobdesk");    
+                    y.appendChild(nohp);    
+                    y.lastChild.text = nohp1;
+
+
+                    alert(xmldoc.xml);
+
+                    //MENYIMPAN KE FILE    
+                    var OutputXML = xmldoc.xml;    
+                    var mfObject, NewSampleFile;    
+                    mfObject = new ActiveXObject("Scripting.FileSystemObject");    
+                    NewSampleFile = mfObject.CreateTextFile("D:/DFile/Kampus/CCIT/Semester3/PROJECT1/berita.xml", true);       
+
+                    NewSampleFile.write(OutputXML);    
+                    NewSampleFile.close();           
+                }
+                else
+                {
+                    alert("Failed to Load Document");
+                } 
+        }
+    </script>
 
     <SCRIPT language="JavaScript">
 
@@ -34,6 +94,7 @@ function validate()
         alert("Email field cannot remain blank. Please provide the email")
         return false
     }
+
     file2=x.file.value
     if (file2.length==0)
     {
@@ -179,9 +240,10 @@ function QS()
               </TR>
               <TR>
                 <TD height="26" >&nbsp;</TD>
-                <TD ><EM>CV</EM></TD>
-                <TD ><INPUT TYPE=FILE NAME="file" SIZE=35></TD>
+                <TD ><EM>Jobdesk</EM></TD>
+                <TD ><INPUT disabled TYPE=text NAME="jobdesk" value="Programmer" SIZE=35></TD>
               </TR>
+              
               </TABLE>
               </BLOCKQUOTE>
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE=SUBMIT VALUE="Submit Form">

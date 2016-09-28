@@ -1,0 +1,265 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rekrutmen Pegawai</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+  
+  <script src="js/bootstrap.min.js"></script>
+ <script language="javascript">
+        function tambah()
+        {
+             var xmldoc= new ActiveXObject("Msxml2.DOMDocument");          
+             xmldoc.load("pelamar.xml");      
+             var error=xmldoc.parseError;
+                if(xmldoc.readyState==4 && xmldoc.parseError.errorCode==0)
+                {
+                    var kritikdetails;
+                    var kritik;
+                    var nama;    
+                    var email;    
+                    var address;
+                    var jobdesk;    
+                    var nama1=x.name2.value;    
+                    var email1=x.email2.value;   
+                    var address1=x.address2.value;
+                    var jobdesk1=x.jobdesk2.value;
+
+                    var y = xmldoc.getElementsByTagName("pelamar")[0];    
+                    kritik=xmldoc.createElement("datapelamar");    
+                    y.appendChild(kritik);
+
+                    objelementskritik=xmldoc.getElementsByTagName("datapelamar");    
+                    last=objelementskritik.length;    
+                    y=objelementskritik[last-1];           
+
+                    nama=xmldoc.createElement("nama");    
+                    y.appendChild(nama);    
+                    y.lastChild.text = nama1;           
+                    
+                    email=xmldoc.createElement("email");    
+                    y.appendChild(email);    
+                    y.lastChild.text = email1;      
+
+                    nohp=xmldoc.createElement("address");    
+                    y.appendChild(address);    
+                    y.lastChild.text = address1;
+
+                    nohp=xmldoc.createElement("jobdesk");    
+                    y.appendChild(jobdesk);    
+                    y.lastChild.text = jobdesk1;
+
+
+                    alert(xmldoc.xml);
+
+                    //MENYIMPAN KE FILE    
+                    var OutputXML = xmldoc.xml;    
+                    var mfObject, NewSampleFile;    
+                    mfObject = new ActiveXObject("Scripting.FileSystemObject");    
+                    NewSampleFile = mfObject.CreateTextFile("D:/DFile/Kampus/CCIT/Semester3/PROJECT1/pelamar.xml", true);       
+
+                    NewSampleFile.write(OutputXML);    
+                    NewSampleFile.close();           
+                }
+                else
+                {
+                    alert("Failed to Load Document");
+                } 
+        }
+
+
+</SCRIPT>
+
+</head>
+<body>
+<!--navbar atasasdsadsa-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Vacancy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" required="">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <li><a href="#"data-toggle="modal" data-target="#myModal">Login</a></li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>-->
+        <!-- Trigger the modal with a button -->
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--navbar end-->
+
+<!--content start-->
+<div class="container">
+
+ <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+            <h1>Form Pelamar PT. IndoKarya</h1>
+            </div>
+        </div><!-- /row -->
+        <hr/>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+            <!--codingan ccit-->
+              <FORM name="x">
+                <table border="0" align="center">
+                  <tr>    
+                      <td>
+                        <label for="register[name]">Name</label>
+                      </td>
+                    <td> &nbsp;<input type=text name="name2" placeholder="" > </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="register[email]">Email</label>
+                      </td><td>&nbsp;<input type="text" name="email2" id="name" required="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="register[address]">Address </label>
+                    </td>
+                    <td>&nbsp;<textarea name="address2"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="register[jobdesk]">Jobdesk </label>
+                    </td>
+                    <td><select NAME="jobdesk2">
+                <option value="Programmer">Programmer</option>
+                <option value="IT Manager">IT Manager</option>
+                <option value="System Analyst">System Analyst</option>
+                <option value="Security System">Security System</option>
+                <option value="Network Administrator">Network Administrator</option>
+                </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan ="4" align="center">
+                    <br>
+                      <input type="submit" value="Simpan" onclick="javascript:tambah()">
+                    <input type="reset" value="Reset">
+                    </td>            
+                  </tr>
+                </table>
+                </FORM>  
+    </TR>  
+</TABLE>
+<!--coding ccit end-->
+            </div>      
+        </div><!-- /row -->
+        <hr/>
+
+        <div class="row">
+            <div class="col-md-12 text-right">
+            By PT. Indokarya
+            </div>
+        </div><!-- /row -->
+            
+    </div> <!-- /container -->
+
+
+</div>
+
+<!--content end-->
+
+<footer class="footer">
+<br>
+<br>
+  <div class="container">
+    <center><p class="text-muted">Copyright 2016. Rekrutmen Pegawai Online.<br> Created by <a href="http://id.linkedin.com/in/4eekid">M Hudya Ramadhana</a> & Mutia Ayu Dianita</p></center> 
+  </div>
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center><h4 class="modal-title">Login</h4></center>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Username </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="username" placeholder="Enter username" required="Please enter your username">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Password:</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" required="Please enter your password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Login</button
+    </div>
+    <br><br>
+    <div>
+      <p>Forget Password ? Click <a href="#"> here</a></p>
+    </div>
+  </div>
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <p> New Account ? Register <a href="http://www.facebook.com">here</a> </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--modal end-->
+
+</footer>
+</body>
+</html>

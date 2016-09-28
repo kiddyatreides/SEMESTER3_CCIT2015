@@ -1,0 +1,19 @@
+<news>
+	<berita>
+		<id_berita>1</id_berita>
+		<judul>Lowongan Pekerjaan PT.IndoKarya 2</judul>
+		<isi>Pencarian programmer akhirnya dibuka, ada beberapa kategori yang dib[....]</isi>
+
+	</berita>
+	<berita>
+		<id_berita>2</id_berita>
+		<judul>PT. IndoKarya Membuka Lowongan Pekerjaan</judul>
+		<isi>PT. IndoKarya yang bergerak dibidang otomatif membuka lowongan pekerjaan pada bidang tertentu, bid[....]</isi>
+
+	</berita>
+	<berita>
+		<id_berita>3</id_berita>
+		<judul>Lowongan Pekerjaan PT. IndoKarya Jakarta</judul>
+		<isi>PT. IndoKarya membuka lowongan pekerjaan di Jakarta, adapun pekerjaan yang ditawark[....]</isi>
+	</berita>
+</news>

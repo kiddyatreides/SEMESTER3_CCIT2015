@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/bootstrap.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+  
   <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -103,8 +104,8 @@
 
 <div class="container">
 	<div class="jumbotron">
-	  <center><h1>Welcome to Jobfield Recruitment</h1></center>
-	  <center><p>You can apply the job below. Make sure you are suitable for the job recruitment, choose the best jobdesk which suit for you to work at the company.</p></center>
+	  <center><h1>Welcome to PT.IndoKarya <br>Programmer Recruitment</h1></center>
+	  <center><p>PT. IndoKarya is Company who search for a best programmer, apply into our company and get alot of projects!</p></center>
 	  <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>-->
 	</div>
 </div>
@@ -113,17 +114,49 @@
   <center> <h1>Berita Lowongan</h1></center>
   <div class="row">
   <!--Berita-->
-  <div class='col-sm-6 col-md-4'>
-    <div class='thumbnail'>
-      <br>
-      <img src='images/briefcase.png' width='150px'; height='150px';>
-      <div class='caption'>
-        <center><h3>{$berita->judul}</h3></center>
-        <br>
-        <center><p>{$berita->isi}<br><br> <a href='vacancy.html'>Lihat Selengkapnya Disini</a></p></center>
-
-      </div>
-    </div>
+  <div class='col-sm-12 col-md-12'>
+     <!-- Table -->
+                         <table class=" table table-striped table-bordered " cellpadding="5" cellspacing="0" bordercolor="#800000" style="border-collapse: collapse">
+                    <thead>
+                    <tr>
+                    <td ><div align="center"><b>No. </b></div></td>
+                    <td ><div align="center"><b>Title</b></div></td> 
+                    <td ><div align="center"><b>News</b></div></td>
+                  </tr>
+                  </thead>
+                  <tbody>
+                            
+                                 <Script language="javascript">
+                    var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+                    function verify() 
+                    { 
+                        if (xmlDoc.readyState != 4) 
+                        { 
+                            return false; 
+                        } 
+                    }
+                    xmlDoc.async="false"; 
+                    xmlDoc.onreadystatechange=verify; 
+                    xmlDoc.load("berita.xml"); 
+                    xmlObj=xmlDoc.documentElement;
+                    var len = xmlObj.childNodes.length;
+                    for(i=0;i<len;i++)
+                    {
+                     var len1 = xmlObj.childNodes(0).childNodes.length;
+                     document.write("<tr>");
+                     for(j=0;j<len1;j++)
+                     {      
+              document.write("<td><div align='center'>"+xmlObj.childNodes(i).childNodes(j).text+"</div></td>");
+                     }  
+                     document.write("</tr>");
+                    }   
+                    </Script>
+                    </tbody>                 
+                            
+                          </table>
+  </div>
+  <div class="container">
+    <center><p class="text-muted">To apply, click <a href="vacancy.html">here</a></p></center> 
   </div>
   <!--berita end-->
 

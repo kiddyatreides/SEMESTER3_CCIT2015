@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="ProductImage.xsl"?>
+<PRODUCTDETAILS>
+	<PRODUCT>
+		<PRODID>P001</PRODID>
+		<PRODNAME>Donat</PRODNAME>
+		<PRICE>2000</PRICE>
+		<DESC>Donat adalah makanan olahan tepung berbentuk bulat berlubang</DESC>
+		<GAMBAR HEIGHT="100" WIDTH="100">C:\Users\Public\Pictures\Sample Pictures\Koala.jpg</GAMBAR>
+		<LINK>WWW.DONAT.COM</LINK>
+	</PRODUCT>
+	<PRODUCT>
+		<PRODID>P002</PRODID>
+		<PRODNAME>Lemper</PRODNAME>
+		<PRICE>2000</PRICE>
+		<DESC>Lemper adalah makanan khas indonesia terbuat dari ketan</DESC>
+		<GAMBAR HEIGHT="100" WIDTH="100">C:\Users\Public\Pictures\Sample Pictures\Desert.jpg</GAMBAR>
+		<LINK>WWW.LEMPER.COM</LINK>
+	</PRODUCT>
+	<PRODUCT>
+		<PRODID>P003</PRODID>
+		<PRODNAME>Bakpau Coklat</PRODNAME>
+		<PRICE>2000</PRICE>
+		<DESC>Bakpau adalah....</DESC>
+		<GAMBAR HEIGHT="100" WIDTH="100">C:\Users\Public\Pictures\Sample Pictures\Jellyfish.jpg</GAMBAR>
+		<LINK>WWW.BAKPAU.COM</LINK>
+	</PRODUCT>
+</PRODUCTDETAILS>
