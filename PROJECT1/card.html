@@ -29,6 +29,17 @@ function QueryString(key)
   return value;
 }
 
+function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+
 function QueryString_Parse()
 {   
   var query = window.location.search.substring(1);
@@ -46,6 +57,7 @@ function QueryString_Parse()
     }
   } 
 }
+
 
 function rep_spChar(value)
 {
@@ -72,7 +84,8 @@ QueryString_Parse();
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <img src="images/icon.png" href="index.html" width="50px" height="50px">
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -80,7 +93,7 @@ QueryString_Parse();
       <ul class="nav navbar-nav">
         <li ><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="#">About</a></li>
-        <a href="#">Vacancy</a></li>
+        <li><a href="vacancy.html">Vacancy</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -112,17 +125,17 @@ QueryString_Parse();
 <!--content start-->
 <div class="container">
 
- <div class="container">
+ <div class="container" >
         <div class="row">
             <div class="col-md-12 text-center">
-            <h1>Form of Data</h1>
+            <h1>Thankyou for your apply !</h1>
             </div>
         </div><!-- /row -->
         <hr/>
-        <div class="row">
+        <div class="row" id="printableArea" >
             <div class="col-md-12 col-sm-12 col-xs-12">
-             <center><h3>Vacancy of PT. IndoKarya Membuka Lowongan Pekerjaan</h3></center><br>
-          <center><img src="images/briefcase.png" width="280px"; height="280px";></center>
+             <center><h3>Exam Card</h3></center><br>
+          <center><img src="images/barcode.png" width="700px"; height="150px";></center>
           <hr>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -133,14 +146,17 @@ QueryString_Parse();
 
         Email &nbsp;&nbsp;&nbsp;&nbsp;: <SCRIPT language="JavaScript">document.write(QueryString("email") + "")</SCRIPT>
         </h1>
-             <br>
-             <br>
-             <center><h3>Please print your exam card, you can download at the link below <br><a href="kartu/kartuujian.pdf">Exam Card</a></h3></center>
-            </div>
-
+             </div>
 
                         
         </div><!-- /row -->
+         <br>
+             <br>
+             <center><h3>Please print your exam card, you can save as PDF or<br> you can directly print at your computer. <br>
+              <div >
+                <h1>Print or exam card</h1>
+              </div>
+              <input type="button" onclick="printDiv('printableArea')" value="Click here" /></center>
         <hr/>
 
         <div class="row">

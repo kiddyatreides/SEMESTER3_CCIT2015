@@ -15,13 +15,4 @@
 		<judul>Lowongan Pekerjaan PT. Sriwijaya Indo Jakarta</judul>
 		<isi>PT Sriwijaya Indo membuka lowongan pekerjaan di Jakarta, adapun pekerjaan yang ditawark[....]</isi>
 	</berita>
-	<berita>
-		<id_berita>B004</id_berita>
-		<judul>asd</judul>
-		<isi>asdads</isi>
-	</berita>
-	<berita>
-		<id_berita>B005</id_berita>
-		<judul>asdad</judul>
-		<isi>ads</isi></berita>
-	<berita><id_berita>B005o</id_berita><judul>Berita1</judul><isi>Berita</isi></berita><berita><id_berita>B0oo</id_berita><judul>lala</judul><isi>lala</isi></berita></news>
+	</news>

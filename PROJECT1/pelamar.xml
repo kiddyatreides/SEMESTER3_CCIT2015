@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pelamar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="file:pelamar.xsd">
+<?xml version="1.0"?>
+<pelamar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:pelamar.xsd">
 	<datapelamar>
 		<nama>M Hudya Ramadhana</nama>
 		<email>kiddydhana@gmail.com</email>
@@ -16,4 +15,4 @@
 		<email>ugiispoyowidodo@gmail.com</email>
 		<address>Bogor</address>
 	</datapelamar>
-</pelamar>
+	<datapelamar><name>Yasin</name><email>yasin@gmail.com</email><address>Cipadu</address></datapelamar><datapelamar><name>Ugi Ispoyo Widodo</name><email>ugi@gmail.com</email><address>Bogor</address></datapelamar></pelamar>

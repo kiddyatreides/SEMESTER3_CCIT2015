@@ -9,66 +9,7 @@
     <script src="js/jquery.min.js"></script>
   
   <script src="js/bootstrap.min.js"></script>
- <script language="javascript">
-        function tambah()
-        {
-             var xmldoc= new ActiveXObject("Msxml2.DOMDocument");          
-             xmldoc.load("berita.xml");      
-             var error=xmldoc.parseError;
-                if(xmldoc.readyState==4 && xmldoc.parseError.errorCode==0)
-                {
-                    var kritikdetails;
-                    var kritik;
-                    var nama;    
-                    var email;    
-                    var nohp;
-                    var saran;    
-                    var nama1=x.no2.value;    
-                    var email1=x.title2.value;   
-                    var nohp1=x.news2.value;
-
-                    var y = xmldoc.getElementsByTagName("news")[0];    
-                    kritik=xmldoc.createElement("berita");    
-                    y.appendChild(kritik);
-
-                    objelementskritik=xmldoc.getElementsByTagName("berita");    
-                    last=objelementskritik.length;    
-                    y=objelementskritik[last-1];           
-
-                    nama=xmldoc.createElement("nama");    
-                    y.appendChild(nama);    
-                    y.lastChild.text = nama1;           
-                    
-                    email=xmldoc.createElement("email");    
-                    y.appendChild(email);    
-                    y.lastChild.text = email1;      
-
-                    nohp=xmldoc.createElement("address");    
-                    y.appendChild(nohp);    
-                    y.lastChild.text = nohp1;
-
-                    nohp=xmldoc.createElement("jobdesk");    
-                    y.appendChild(nohp);    
-                    y.lastChild.text = nohp1;
-
-
-                    alert(xmldoc.xml);
-
-                    //MENYIMPAN KE FILE    
-                    var OutputXML = xmldoc.xml;    
-                    var mfObject, NewSampleFile;    
-                    mfObject = new ActiveXObject("Scripting.FileSystemObject");    
-                    NewSampleFile = mfObject.CreateTextFile("D:/DFile/Kampus/CCIT/Semester3/PROJECT1/berita.xml", true);       
-
-                    NewSampleFile.write(OutputXML);    
-                    NewSampleFile.close();           
-                }
-                else
-                {
-                    alert("Failed to Load Document");
-                } 
-        }
-    </script>
+ 
 
     <SCRIPT language="JavaScript">
 
@@ -164,7 +105,7 @@ function QS()
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <img src="images/icon.png" href="index.html" width="50px" height="50px">
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -172,8 +113,8 @@ function QS()
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Vacancy</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="formvacancy.html">Vacancy</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <form class="navbar-form navbar-left">

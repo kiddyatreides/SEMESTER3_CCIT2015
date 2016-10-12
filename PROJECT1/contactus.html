@@ -69,6 +69,39 @@
                     alert("Failed to Load Document");
                 } 
         }
+
+        function validate()
+    {
+    submitOK="True"
+    x=document.form1
+    account_na=x.nama2.value
+    if (account_na.length==0)
+    {
+        alert("Name field cannot remain blank. Please provide the your name")
+        return false
+    }
+    ordering_add=x.saran2.value
+    if (ordering_add.length==0)
+    {
+        alert("Message field cannot remain blank. Please provide the Message")
+        return false
+    }
+    email2=x.email2.value
+    if (email2.length==0)
+    {
+        alert("Email field cannot remain blank. Please provide the email")
+        return false
+    }
+
+    file2=x.nohp2.value
+    if (file2.length==0)
+    {
+        alert("Phone Number field cannot remain blank. Please provide the Phone Number")
+        return false
+    }
+    
+    return true
+    }
     </script>
 </head>
 <body>
@@ -126,7 +159,7 @@
 
 
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <FORM name="x">
+              <FORM name="x" method="post" onSubmit="return validate()"  >
                 <table border="0" align="center">
                   <tr>    
                       <td>
@@ -156,7 +189,7 @@
                   <tr>
                     <td colspan ="4" align="center">
                     <br>
-                      <input type="submit" value="Simpan" onclick="javascript:tambah()">
+                      <input type="submit" value="Simpan" onclick="javascript:tambah()">>
                     <input type="reset" value="Reset">
                     </td>            
                   </tr>

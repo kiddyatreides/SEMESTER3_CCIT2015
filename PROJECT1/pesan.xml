@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<kritikdetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="file:pesan.xsd">
+<?xml version="1.0"?>
+<kritikdetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:pesan.xsd">
 	<kritik>
 		<nama>Hudya</nama>
 		<email>hudya@gmail.com</email>
 		<nohp>08323131523</nohp>
-		<saran>webnya b aja</saran>
+		<saran>Saya minta nomor HRD nya dong</saran>
 	</kritik>
-	<kritik><nama>dwada</nama><email>addwada</email><nohp>esefsfe</nohp><saran>ssss</saran></kritik><kritik><nama>M Hudya Ramadhana</nama><email>kiddydhana@gmail.com</email><nohp>083878409051</nohp><saran>webnya baik</saran></kritik></kritikdetails>
+	</kritikdetails>

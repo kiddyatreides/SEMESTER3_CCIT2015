@@ -1,0 +1,4 @@
+C001#Muhamad Hudya Ramadhana#Male#KTP#317401902312#01 Januari 1998#Jalan Saribena
+C002#Siti Aisyah#Female#Passport#912321312#14 Juni 1995#Jakarta
+C003#Muhamad Amada Deh#Male#Passport#98137913#10 Februari 1992#Bogor
+C004#Indra Jakus#Male#KTP#872382374234#20/07/1995#Jakarta

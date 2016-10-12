@@ -1,0 +1,76 @@
+c:\users\kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\bin\Debug\GUI_Project.exe
+c:\users\kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\bin\Debug\GUI_Project.pdb
+c:\users\kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Properties.Resources.resources
+c:\users\kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.csproj.GenerateResource.Cache
+c:\users\kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.exe
+c:\users\kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.pdb
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.csprojResolveAssemblyReference.cache
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AddFlight.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.FormBack.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Add_airplane.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayAirplane.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.UpdateAirplane.resources
+C:\Users\Kiddy\Documents\Visual Studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Add_flight.resources
+C:\Users\Kiddy\Documents\Visual Studio 2010\Projects\GUI_Project\GUI_Project\bin\Debug\GUI_Project.exe.config
+C:\Users\Kiddy\Documents\Visual Studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayFlight.resources
+C:\Users\Kiddy\Documents\Visual Studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.UpdateFlight.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AddCustomer.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayCustomer.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.UpdateCustomer.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Testing.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AddTicket.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayTicket.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AdminForm.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.ReservationForm.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Reservationfrm.resources
+C:\Users\Kiddy\documents\visual studio 2010\Projects\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.LoginForm.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\bin\Debug\GUI_Project.exe.config
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.exe
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.pdb
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AddCustomer.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AddFlight.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AddTicket.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Add_airplane.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Add_flight.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AdminForm.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayAirplane.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayCustomer.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayFlight.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayTicket.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Reservationfrm.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.FormBack.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.LoginForm.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.ReservationForm.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Testing.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.UpdateAirplane.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.UpdateCustomer.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.UpdateFlight.resources
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.csproj.GenerateResource.Cache
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\bin\Debug\GUI_Project.exe
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\bin\Debug\GUI_Project.pdb
+C:\Users\Dell\Downloads\Compressed\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Properties.Resources.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\bin\Debug\GUI_Project.exe.config
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.exe
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.pdb
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\bin\Debug\GUI_Project.exe
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\bin\Debug\GUI_Project.pdb
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AddCustomer.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AddFlight.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AddTicket.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Add_airplane.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Add_flight.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.AdminForm.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayAirplane.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayCustomer.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayFlight.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.DisplayTicket.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Reservationfrm.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.FormBack.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.LoginForm.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Properties.Resources.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.ReservationForm.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.Testing.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.UpdateAirplane.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.UpdateCustomer.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.UpdateFlight.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\GUI_Project\GUI_Project\GUI_Project\obj\x86\Debug\GUI_Project.csproj.GenerateResource.Cache
