@@ -1,0 +1,39 @@
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\bin\Debug\RentHouse.exe
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\bin\Debug\RentHouse.pdb
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Customer.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Properties.Resources.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.csproj.GenerateResource.Cache
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.exe
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.pdb
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.DisplayCustomer.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.DisplayLaundry.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.DisplayMonthlyPaid.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.DisplayRent.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.DisplayRoom.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Laundry.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.MainMenu.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.MonthlyPaid.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Rent.resources
+D:\School's Documents\CCIT & PNJ\CCIT\Semester3\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Room.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\bin\Debug\RentHouse.exe.config
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\bin\Debug\RentHouse.exe
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\bin\Debug\RentHouse.pdb
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Customer.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.DisplayCustomerr.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.DisplayLaundry.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.DisplayMonthlyPaid.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.DisplayRent.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.DisplayRoom.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Laundry.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Login.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.MainMenu.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Properties.Resources.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Rent.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.RentIn.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.RMonthlyPaid.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.Room.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.RoomType.resources
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.csproj.GenerateResource.Cache
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.exe
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.pdb
+C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.csprojResolveAssemblyReference.cache

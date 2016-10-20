@@ -1,3 +1,0 @@
-A001#Jakarta#Economy#100#Active
-A003#asdsaddas#Private#100#Active
-A004#asdas#Economy#100#Active
