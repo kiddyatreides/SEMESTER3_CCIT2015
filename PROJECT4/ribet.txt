@@ -1,0 +1,11 @@
+CREATE TRIGGER aTrigger
+ON Master
+FOR UPDATE AS
+
+IF datepart(day,GETDATE())= 1
+
+BEGIN
+<insert code here>
+END
+
+GO
