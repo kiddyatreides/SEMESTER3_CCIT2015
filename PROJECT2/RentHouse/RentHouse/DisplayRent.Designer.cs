@@ -71,6 +71,7 @@
             this.dg_rent.Name = "dg_rent";
             this.dg_rent.Size = new System.Drawing.Size(438, 299);
             this.dg_rent.TabIndex = 6;
+            this.dg_rent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_rent_CellContentClick);
             // 
             // label1
             // 

@@ -37,3 +37,6 @@ C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\D
 C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.exe
 C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.pdb
 C:\Users\Kid\Documents\Visual Studio 2010\Projects\RentHouse\RentHouse\obj\x86\Debug\RentHouse.csprojResolveAssemblyReference.cache
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\RentHouse\RentHouse\bin\Debug\RentHouse.exe.config
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\RentHouse\RentHouse\obj\x86\Debug\RentHouse.exe
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\RentHouse\RentHouse\obj\x86\Debug\RentHouse.pdb

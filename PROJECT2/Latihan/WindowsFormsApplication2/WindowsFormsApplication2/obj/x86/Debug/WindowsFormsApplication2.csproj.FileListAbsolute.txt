@@ -8,3 +8,6 @@ c:\users\kid\documents\visual studio 2010\Projects\WindowsFormsApplication2\Wind
 c:\users\kid\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
 C:\Users\Kid\Documents\Visual Studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
 C:\Users\Kid\Documents\Visual Studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Form2.resources
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\Latihan\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\Latihan\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\Latihan\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb

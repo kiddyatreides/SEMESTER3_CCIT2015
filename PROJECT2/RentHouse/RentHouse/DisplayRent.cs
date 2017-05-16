@@ -88,5 +88,10 @@ namespace RentHouse
                 MessageBox.Show(ex.Message);
             }  
         }
+
+        private void dg_rent_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

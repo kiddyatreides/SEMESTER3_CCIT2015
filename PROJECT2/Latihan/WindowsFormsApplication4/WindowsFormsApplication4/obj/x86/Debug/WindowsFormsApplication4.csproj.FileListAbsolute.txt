@@ -5,3 +5,5 @@ c:\users\kid\documents\visual studio 2010\Projects\WindowsFormsApplication4\Wind
 c:\users\kid\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
 c:\users\kid\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.exe
 c:\users\kid\documents\visual studio 2010\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.pdb
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\Latihan\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.exe
+D:\DFile\Kampus\CCIT\Semester3\PROJECT2\Latihan\WindowsFormsApplication4\WindowsFormsApplication4\obj\x86\Debug\WindowsFormsApplication4.pdb
